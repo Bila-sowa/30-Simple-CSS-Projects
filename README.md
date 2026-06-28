@@ -5,7 +5,7 @@ This repository contains a collection of diverse, simple projects created with p
 ## Tech Stack
 - HTML
 - CSS
-- JavaScript
+- JavaScript (minimal usage)
 
 ## What's Included
 *Note: Coming soon*
