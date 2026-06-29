@@ -1,0 +1,109 @@
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Limelight&family=Playwrite+IE:wght@100..400&family=Pliant:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+    .player{
+        background: #ecf7ff;
+        border: 1px solid #a8c4da;
+        border-radius: 15px;
+        box-shadow: 1px 1px 10px #ecf7ff;
+        font-family: "Raleway", sans-serif;
+        width: 400px; 
+        height: 600px;
+    }
+    .player h3 {
+        margin: 20px 10px;
+    }
+    .img-container{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    .title-container{
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .track-name{
+        font-size: 34px;
+        font-weight: 600;
+    }
+    .author-name{
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .time-bar-container{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .time-bar{
+        background: rgb(210, 224, 229);
+        border: 1px solid rgb(178, 190, 193);
+        border-radius: 200px;
+        width: 280px;
+        height: 5px;
+    }   
+    .buttons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 34px;
+        gap: 30px;
+        margin-bottom: 25px;
+    }
+    .previews, .play, .next {
+        cursor: pointer;
+        transition: 0.2;
+    }
+    .previews:hover, .play:hover, .next:hover {
+        color: #202020;
+    }
+    .play{
+        position: relative;
+        top: 3.5px;
+    }
+    .volume-bar-container{
+        margin: 0px 20px;
+        display: flex;
+
+        align-items: center;
+        justify-content: space-between;
+    }
+    .volume-icon{
+        margin-right: 5px;
+    }
+    .volume-bar{
+        background: rgb(210, 224, 229);
+        border: 1px solid rgb(178, 190, 193);
+        border-radius: 200px;
+        width: 355px;
+        height: 5px;
+    }
+</style>
+<body>
+    <div class="player">
+        <h3>Now playing</h3>
+        <div class="img-container">
+            <img src="https://upload.wikimedia.org/wikipedia/en/e/e0/Chrystal_-_The_Days_%28single_cover%29.jpg" alt="player-image">
+        </div>
+        <div class="title-container">
+            <span class="track-name">CHRYSTAL</span><br>
+            <span class="author-name">THE DAYS</span>
+        </div>
+        <div class="functional-container">
+            <div class="time-bar-container">
+                <span class="start-time">0:00</span>
+                <div class="time-bar"></div>
+                <span class="end-time">3:53</span>
+            </div>
+            <div class="buttons">
+                <span class="previews">⏮</span>
+                <span class="play">►</span>
+                <span class="next">⏭</span>
+            </div>
+            <div class="volume-bar-container">
+                <span class="volume-icon">🔊</span>
+                <div class="volume-bar"></div>
+            </div>
+        </div>
+    </div>
+</body>
