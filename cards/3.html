@@ -1,0 +1,74 @@
+<style>
+    .discord-card {
+        font-family: Arial, Helvetica, sans-serif;
+        
+        box-shadow: 3px 3px 5px #000000;
+        background-color: #292a2e;
+        height: 130px;
+        border-radius: 10px;
+        width: 600px;
+
+        display: flex;
+        align-items: center;
+    }
+    
+    .image-container {
+        margin: 0px 20px;
+    }
+
+    .avatar {
+        width: 80px;
+        border-radius: 50%;
+    }
+
+    .status {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #499f5f;
+        outline: 5px solid #292a2e;
+        left: 90px;
+        top: 90px;
+    }
+
+    .info-container {
+        width: calc(600px - 80px);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .info-container span {
+        font-size: 36px;
+        color: white;
+
+    }
+
+    .info-container a {
+        font-size: 14px;
+        color: white;
+        text-decoration: none;
+        border: 1px dashed rgba(255, 255, 255, 0.5);
+        border-radius: 20px;
+        padding: 20px 40px; 
+        margin-right: 40px;
+        transition: 0.2s;
+    }
+
+    .info-container a:hover {
+        border: 1px dashed rgba(255, 255, 255, 1);
+    }
+</style>
+<body>
+    <div class="discord-card">
+        <div class="image-container">
+            <img class="avatar" src="https://pbs.twimg.com/profile_images/2071640901752164352/Of85Hv__.jpg" alt="Profile Image">
+            <div class="status"></div>
+        </div>
+        <div class="info-container">
+            <span>User</span>
+            <a href="#">Link to profile</a>
+        </div>
+    </div>    
+</body>
