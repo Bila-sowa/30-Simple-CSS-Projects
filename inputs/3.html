@@ -1,0 +1,67 @@
+<style>
+    body {
+        background: #afafaf;
+    }
+    .input-container input{
+        border: none;
+        background: #6868b7;
+        outline: 1px solid #525290;
+        border-radius: 10px;
+
+        color: white;
+        font-size: 16px;
+
+        width: 300px;
+        height: 40px;
+
+        transition: 0.2s all;
+    }
+
+    .input-container input::placeholder {
+        font-size: 16px;
+        color: white;
+    }
+
+    input:focus {
+        box-shadow: 
+        0px 0px 10px #6868b64d,
+        0px 0px 20px #6868b699,
+        0px 0px 30px #6969b5e6;
+    }
+
+    .input-text {
+        display: none;
+        font-size: 12px;
+        left: 10px;
+        top: 2px;
+        color: #ffffff;
+        text-shadow: 1px 1px 1px black;
+        position: absolute;
+        transition: 0.2s;
+    }
+
+    .is-focus {
+        display: inline;
+    }
+</style>
+<body>
+    <div class="input-container">
+        <input type="text" id="input" placeholder="Enter you name">
+        <span class="input-text" id="input-text">Enter you name</span>
+    </div>
+</body>
+<script>
+    const inputElemnt = document.querySelector("#input")
+    const inputTextElement = document.querySelector("#input-text")
+
+    console.log(inputElemnt);
+    console.log(inputTextElement);
+    
+    
+    inputElemnt.addEventListener("focus", () => {
+        inputTextElement.classList.add("is-focus")
+    });
+    inputElemnt.addEventListener("blur", () => {
+        inputTextElement.classList.remove("is-focus")
+    });
+</script>
